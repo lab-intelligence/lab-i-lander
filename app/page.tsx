@@ -35,8 +35,7 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="lab-i logo" className="w-8 h-8 object-contain" />
-              <span className="font-bold text-lg">lab-i</span>
+              <img src="/long.png" alt="Sieve" className="h-8 object-contain" />
             </div>
 
             {/* Desktop Menu */}
@@ -57,11 +56,11 @@ export default function Home() {
 
             {/* Right Actions */}
             <div className="hidden md:flex items-center gap-4">
-              <a href="https://github.com/lab-intelligence" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-lg hover:border-slate-500 transition">
+              <a href="https://github.com/sieve-labs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-lg hover:border-slate-500 transition">
                 <Github size={18} />
                 GitHub
               </a>
-              <a href="https://github.com/lab-intelligence/lab-i-app/releases" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-2 bg-slate-700 text-white font-semibold rounded-lg hover:bg-slate-600 transition">
+              <a href="https://github.com/sieve-labs/sieve-app/releases" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-2 bg-slate-700 text-white font-semibold rounded-lg hover:bg-slate-600 transition">
                 Download
                 <ArrowRight size={18} />
               </a>
@@ -91,10 +90,10 @@ export default function Home() {
               <button onClick={() => scrollToSection('downloads')} className="block w-full text-left px-4 py-2 text-gray-400 hover:text-white">
                 Downloads
               </button>
-              <a href="https://github.com/lab-intelligence" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-slate-400 hover:text-slate-300">
+              <a href="https://github.com/sieve-labs" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-slate-400 hover:text-slate-300">
                 GitHub
               </a>
-              <a href="https://github.com/lab-intelligence/lab-i-app/releases" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 bg-slate-700 text-white font-semibold rounded text-center">
+              <a href="https://github.com/sieve-labs/sieve-app/releases" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 bg-slate-700 text-white font-semibold rounded text-center">
                 Download
               </a>
             </div>
@@ -115,14 +114,14 @@ export default function Home() {
 
           {/* Headline */}
           <h1 className="text-5xl sm:text-6xl font-black mb-8 leading-tight">
-            Automated Laboratory
+            Sort anything,
             <br />
-            Image Organization
+            automatically
           </h1>
 
           {/* Subheading */}
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            lab-i (short for lab-intelligence) is a free, open source app that automatically classifies and organises your images using AI. Built for researchers. Works for everyone.
+            Sieve is a free, open source app that automatically classifies and organises your images using AI. No cloud, no accounts, no compromises.
           </p>
 
           {/* Feature Pills */}
@@ -144,7 +143,7 @@ export default function Home() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://github.com/lab-intelligence/lab-i-app/releases"
+              href="https://github.com/sieve-labs/sieve-app/releases"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-slate-700 text-white font-semibold rounded-lg hover:bg-slate-600 transition flex items-center justify-center gap-2"
@@ -153,7 +152,7 @@ export default function Home() {
               <ArrowRight size={18} />
             </a>
             <a
-              href="https://lab-i.gitbook.io/lab-i/"
+              href="https://sieve-labs.gitbook.io/sieve/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border border-gray-700 rounded-lg hover:border-slate-500 transition flex items-center justify-center gap-2"
@@ -169,8 +168,8 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-950/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-slate-400 text-sm font-semibold mb-2">Why lab-i</p>
-            <h2 className="text-4xl font-black">Image organization shouldn't slow down your research</h2>
+            <p className="text-slate-400 text-sm font-semibold mb-2">Why Sieve</p>
+            <h2 className="text-4xl font-black">Image organization shouldn't be tedious</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -178,17 +177,17 @@ export default function Home() {
               {
                 icon: Folder,
                 title: 'Manual Tagging is Tedious',
-                description: 'Imaging sessions produce hundreds of files. Sorting them manually takes hours. That is time taken away from actual research.'
+                description: 'Photo collections produce hundreds of files. Sorting them manually takes hours. That is time taken away from actually using them.'
               },
               {
                 icon: Lock,
                 title: 'Existing Tools Demand Accounts',
-                description: 'Most classification tools require sign-ups, subscriptions, or cloud uploads. Researchers shouldn\'t need a billing relationship just to sort files.'
+                description: 'Most classification tools require sign-ups, subscriptions, or cloud uploads. You shouldn\'t need a billing relationship just to sort files.'
               },
               {
                 icon: Shield,
                 title: 'Your Images Should Stay Private',
-                description: 'Sensitive lab images, unpublished results, and proprietary data should never leave your device without your explicit choice.'
+                description: 'Sensitive photos, personal memories, and private data should never leave your device without your explicit choice.'
               }
             ].map((item, i) => {
               const IconComponent = item.icon;
@@ -211,10 +210,10 @@ export default function Home() {
             <div>
               <p className="text-slate-400 text-sm font-semibold mb-2">How it Works</p>
               <h2 className="text-4xl font-black mb-6">
-                Define categories. <span className="text-slate-400">lab-i organizes.</span>
+                Define categories. <span className="text-slate-400">Sieve organizes.</span>
               </h2>
               <p className="text-gray-400 text-lg mb-4">
-                lab-i is a local-first image classification tool. You define the categories, supply an AI provider (or use Ollama), and lab-i automatically sorts your images into labeled folders.
+                Sieve is a local-first image classification tool. You define the categories, supply an AI provider (or use Ollama), and Sieve automatically sorts your images into labeled folders.
               </p>
             </div>
 
@@ -226,13 +225,13 @@ export default function Home() {
                 <div className="w-3 h-3 rounded-full bg-green-500" />
               </div>
               <div className="p-6 font-mono text-sm text-slate-300 overflow-x-auto">
-                <div>$ lab-i classify ./experiment-images/</div>
+                <div>$ sieve classify ./photos/</div>
                 <div className="text-gray-400 mt-2">Found 247 images...</div>
-                <div className="text-gray-400">Classifying with label set: Biology</div>
-                <div className="text-green-500 mt-2">✓ Gel         → 84 images sorted</div>
-                <div className="text-green-500">✓ Microscopy  → 63 images sorted</div>
-                <div className="text-green-500">✓ Drosophila  → 41 images sorted</div>
-                <div className="text-green-500">✓ Petriplate  → 35 images sorted</div>
+                <div className="text-gray-400">Classifying with label set: Vacation</div>
+                <div className="text-green-500 mt-2">✓ Beach       → 84 images sorted</div>
+                <div className="text-green-500">✓ Mountains   → 63 images sorted</div>
+                <div className="text-green-500">✓ City        → 41 images sorted</div>
+                <div className="text-green-500">✓ Food        → 35 images sorted</div>
                 <div className="text-yellow-600">✓ Uncertain   → 24 images flagged</div>
                 <div className="text-gray-400 mt-2">Done in 4m 12s. Results saved to results.csv</div>
               </div>
@@ -261,12 +260,12 @@ export default function Home() {
               {
                 step: '3',
                 title: 'Create categories',
-                description: 'Define a label set. Create your own or use the built-in Biology set.'
+                description: 'Define a label set. Create your own categories for any type of images you want to organize.'
               },
               {
                 step: '4',
                 title: 'Organize',
-                description: 'Select a folder. lab-i classifies images and sorts them into labeled subfolders.'
+                description: 'Select a folder. Sieve classifies images and sorts them into labeled subfolders.'
               }
             ].map((item, i) => (
               <div key={i} className="text-center">
@@ -286,7 +285,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black text-center mb-4">What's included</h2>
           <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
-            Features designed for research workflows.
+            Features designed for any image workflow.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -299,7 +298,7 @@ export default function Home() {
               {
                 icon: Tag,
                 title: 'Custom Label Sets',
-                description: 'Define your own categories. Save multiple label sets for different experiments or workflows.'
+                description: 'Define your own categories. Save multiple label sets for different projects or workflows.'
               },
               {
                 icon: ImageIcon,
@@ -314,7 +313,7 @@ export default function Home() {
               {
                 icon: Moon,
                 title: 'Dark and Light Theme',
-                description: 'lab-i respects your preference. Switch between dark and light mode in settings.'
+                description: 'Sieve respects your preference. Switch between dark and light mode in settings.'
               },
               {
                 icon: Monitor,
@@ -340,7 +339,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black text-center mb-4">Choose your AI provider</h2>
           <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
-            lab-i supports multiple providers. You control the keys and calls. Your images never leave your machine.
+            Sieve supports multiple providers. You control the keys and calls. Your images never leave your machine.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -409,7 +408,7 @@ export default function Home() {
 
             <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-8">
               <p className="text-gray-400">
-                lab-i was built with research in mind. Sensitive images — patient-adjacent data, unpublished results, proprietary specimens — should never be at risk. With lab-i, they aren't.
+                Sieve was built with privacy in mind. Sensitive images — personal photos, private documents, confidential data — should never be at risk. With Sieve, they aren't.
               </p>
               <p className="text-gray-400 mt-4">
                 For maximum privacy, use Ollama and your images never leave your machine at all.
@@ -434,7 +433,7 @@ export default function Home() {
             ].map((os, i) => (
               <a
                 key={i}
-                href="https://github.com/lab-intelligence/lab-i-app/releases"
+                href="https://github.com/sieve-labs/sieve-app/releases"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-6 border border-gray-800 rounded-lg bg-gray-900/30 hover:border-slate-600 transition flex flex-col items-center justify-center gap-2"
@@ -448,7 +447,7 @@ export default function Home() {
 
           <p className="text-sm text-gray-500 mb-12">
             All builds are compiled automatically from the open source code via GitHub Actions.<br />
-            <a href="https://github.com/lab-intelligence/lab-i-app" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-300">
+            <a href="https://github.com/sieve-labs/sieve" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-300">
               View the source
             </a>
           </p>
@@ -466,9 +465,9 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center bg-gray-900/50 border border-gray-800 rounded-lg p-12">
           <Coffee className="text-slate-400 mx-auto mb-6" size={48} />
-          <h2 className="text-3xl font-black mb-4">Enjoying lab-i?</h2>
+          <h2 className="text-3xl font-black mb-4">Enjoying Sieve?</h2>
           <p className="text-gray-400 mb-8">
-            lab-i is free and open source. If it's been helpful, consider supporting the developer.
+            Sieve is free and open source. If it's been helpful, consider supporting the developer.
           </p>
           <a
             href="https://buymeacoffee.com/sameermann"
@@ -501,7 +500,7 @@ export default function Home() {
             {/* Info */}
             <div className="text-center md:text-left flex-1">
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-3">
-                lab-i is an independent open source project
+                Sieve is an independent open source project
               </p>
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                 <h3 className="text-lg font-medium text-slate-200">Sameer Mann</h3>
@@ -537,13 +536,12 @@ export default function Home() {
             {/* Logo */}
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
-                <img src="/logo.png" alt="lab-i logo" className="w-8 h-8 object-contain" />
-                <span className="font-bold">lab-i</span>
+                <img src="/long.png" alt="Sieve" className="h-8 object-contain" />
               </div>
               <p className="text-sm text-gray-400">
-                Automated laboratory image organisation. Built by a solo developer, for researchers worldwide.
+                Automatically sort your images with AI. Built by a solo developer.
               </p>
-              <a href="https://github.com/lab-intelligence" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-slate-300 mt-4 inline-block">
+              <a href="https://github.com/sieve-labs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-slate-300 mt-4 inline-block">
                 <Github size={20} />
               </a>
             </div>
@@ -553,22 +551,22 @@ export default function Home() {
               <h4 className="font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <a href="https://github.com/lab-intelligence/lab-i-app/releases" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
+                  <a href="https://github.com/sieve-labs/sieve-app/releases" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
                     Download
                   </a>
                 </li>
                 <li>
-                  <a href="https://lab-i.gitbook.io/lab-i/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
+                  <a href="https://sieve-labs.gitbook.io/sieve/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/lab-intelligence" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
+                  <a href="https://github.com/sieve-labs" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
                     GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/lab-intelligence/lab-i-app/issues" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
+                  <a href="https://github.com/sieve-labs/sieve/issues" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
                     Report a Bug
                   </a>
                 </li>
@@ -580,8 +578,8 @@ export default function Home() {
 
           {/* Bottom Bar */}
           <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-            <span>Made for Researchers by a <a href="https://sameer.goneto.space/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">Student</a>.</span>
-            <span>© 2026 lab-i. Licensed under MIT License.</span>
+            <span>Built by a <a href="https://sameer.goneto.space/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">Student</a>.</span>
+            <span>© 2026 Sieve. Licensed under MIT License.</span>
           </div>
         </div>
       </footer>

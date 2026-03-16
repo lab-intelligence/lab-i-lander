@@ -13,9 +13,9 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://labi.goneto.space'),
-  title: 'lab-i - Automated Laboratory Image Organization',
-  description: 'Free, open source image classification app for researchers. Automatically organize and classify your images locally with AI. No cloud, no accounts, no compromises.',
+  metadataBase: new URL('https://sieve.goneto.space'),
+  title: 'Sieve - Sort anything, automatically',
+  description: 'Sieve is a free, open source app that automatically classifies and organises your images using AI. No cloud, no accounts, no compromises.',
   icons: {
     icon: [
       {
@@ -34,16 +34,16 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'lab-i - Automated Laboratory Image Organization',
-    description: 'Free, open source image classification app for researchers. Automatically organize and classify your images locally with AI. No cloud, no accounts, no compromises.',
-    url: 'https://labi.goneto.space',
-    siteName: 'lab-i',
+    title: 'Sieve - Sort anything, automatically',
+    description: 'Sieve is a free, open source app that automatically classifies and organises your images using AI. No cloud, no accounts, no compromises.',
+    url: 'https://sieve.goneto.space',
+    siteName: 'Sieve',
     images: [
       {
         url: '/meta.png',
         width: 1200,
         height: 630,
-        alt: 'lab-i - Automated Laboratory Image Organization',
+        alt: 'Sieve - Sort anything, automatically',
       },
     ],
     locale: 'en_US',
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'lab-i - Automated Laboratory Image Organization',
-    description: 'Free, open source image classification app for researchers. Automatically organize and classify your images locally with AI. No cloud, no accounts, no compromises.',
+    title: 'Sieve - Sort anything, automatically',
+    description: 'Sieve is a free, open source app that automatically classifies and organises your images using AI. No cloud, no accounts, no compromises.',
     images: ['/meta.png'],
   },
 }
